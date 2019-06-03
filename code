@@ -1,0 +1,37 @@
+
+M=set()
+n=int(input())
+line=input()
+line=line.split()
+M=set(line)
+
+N=set()
+m=int(input())
+line1=input()
+line1=line1.split()
+N=set(line1)
+l=M.difference(N)
+#print(l)
+L=list(l)
+
+
+p=N.difference(M)
+P=list(p)
+
+H=L+P
+
+#print(H)
+
+i = 0
+while(i<len(H)):
+    
+    H[i]=int(H[i])
+    i = i + 1
+H.sort()
+C=H
+
+i = 0
+
+while(i<len(C)):
+    print(C[i])
+    i =i+1
